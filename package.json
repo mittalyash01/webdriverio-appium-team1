@@ -10,7 +10,8 @@
     "test:perfecto:android": "wdio config/perfecto/perfecto.android.conf.js",
     "test:perfecto:ios": "wdio config/perfecto/perfecto.ios.conf.js",
     "test:browserstack:android": "wdio config/browserstack/browserstack.android.conf.js",
-    "test:browserstack:ios": "wdio config/browserstack/browserstack.ios.conf.js"
+    "test:browserstack:ios": "wdio config/browserstack/browserstack.ios.conf.js",
+    "report": "./node_modules/.bin/allure serve"
   },
   "keywords": [
     "webdriverio",
@@ -31,12 +32,14 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/register": "^7.16.0",
+    "@wdio/allure-reporter": "^8.5.0",
     "@wdio/appium-service": "^7.14.1",
     "@wdio/browserstack-service": "^7.16.10",
     "@wdio/local-runner": "^7.14.1",
     "@wdio/mocha-framework": "^7.14.1",
     "@wdio/sauce-service": "^8.3.10",
     "@wdio/spec-reporter": "^7.14.1",
+    "allure-commandline": "^2.21.0",
     "eslint": "7.32.0",
     "eslint-plugin-wdio": "^7.4.2",
     "npm-bundle": "^3.0.3",
